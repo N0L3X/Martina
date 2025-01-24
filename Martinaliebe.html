@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Für Martina</title>
+    <style>
+        body {
+            background: #000;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #fff;
+        }
+        h1 {
+            color: #ff4757;
+            font-size: 50px;
+            animation: pulse 1.5s infinite;
+        }
+        h2 {
+            color: #ffa502;
+            font-size: 30px;
+            margin-top: 20px;
+        }
+        p {
+            color: #dfe4ea;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .hearts span {
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: red;
+            opacity: 0.8;
+            animation: fall 5s infinite;
+            clip-path: polygon(50% 0%, 61% 30%, 98% 35%, 68% 57%, 79% 91%, 50% 75%, 21% 91%, 32% 57%, 2% 35%, 39% 30%);
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts">
+        <span style="left: 10%; animation-delay: 0s;"></span>
+        <span style="left: 30%; animation-delay: 1s;"></span>
+        <span style="left: 50%; animation-delay: 2s;"></span>
+        <span style="left: 70%; animation-delay: 3s;"></span>
+        <span style="left: 90%; animation-delay: 4s;"></span>
+        <span style="left: 20%; animation-delay: 5s;"></span>
+        <span style="left: 40%; animation-delay: 6s;"></span>
+        <span style="left: 60%; animation-delay: 7s;"></span>
+        <span style="left: 80%; animation-delay: 8s;"></span>
+    </div>
+    <h1>Für Martina ❤️</h1>
+    <h2>Du bist mein Ein und Alles</h2>
+    <p>
+        Martina, der Streit war dumm, und es tut mir leid. Ich liebe dich mehr, als Worte sagen können. Du bist mein Herz, mein Leben und meine Zukunft.
+    </p>
+    <p>
+        Bitte vergib mir. Ich verspreche dir, dich für immer zu lieben. ❤️
+    </p>
+</body>
+</html>
