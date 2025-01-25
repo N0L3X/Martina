@@ -1,113 +1,58 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Für Meine Süße ❤️</title>
+    <title>Für Martina</title>
     <style>
         body {
-            background: #ffe6f2;
-            overflow-x: hidden;
-            margin: 0;
-            min-height: 100vh;
+            background: #000;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            color: #fff;
         }
-
-        .love-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+        h1 {
+            color: #ff4757;
+            font-size: 50px;
+            animation: pulse 1.5s infinite;
         }
-
-        .photo-frame {
-            position: relative;
-            border-radius: 20px;
-            overflow: hidden;
-            transform: rotate(-2deg);
-            transition: all 0.3s ease;
-            cursor: pointer;
-            box-shadow: 0 10px 20px rgba(255, 71, 87, 0.2);
+        h2 {
+            color: #ffa502;
+            font-size: 30px;
+            margin-top: 20px;
         }
-
-        .photo-frame:nth-child(even) {
-            transform: rotate(2deg);
+        p {
+            color: #dfe4ea;
+            font-size: 20px;
+            margin-top: 30px;
         }
-
-        .photo-frame:hover {
-            transform: rotate(0deg) scale(1.08);
-            z-index: 2;
+        img {
+            width: 300px; /* Größe der Bilder anpassen */
+            margin: 20px;
+            border-radius: 15px; /* Ecken abrunden */
         }
-
-        .photo-frame img {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-            filter: sepia(0.1) brightness(1.05);
-            transition: filter 0.3s ease;
-        }
-
-        .photo-frame:hover img {
-            filter: sepia(0) brightness(1.1);
-        }
-
-        .photo-frame::before {
-            content: '';
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            right: -10px;
-            bottom: -10px;
-            background: linear-gradient(45deg, #ff85a2, #ff4757);
-            z-index: -1;
-            border-radius: 25px;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .photo-frame:hover::before {
-            opacity: 0.3;
-        }
-
-        .floating-hearts span {
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            background: url('20240526_232047_IMG_4528.JPG') center/cover;
-            animation: float 6s infinite linear;
-            opacity: 0.9;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0) rotate(0deg); }
-            25% { transform: translate(10px, -15px) rotate(15deg); }
-            50% { transform: translate(-10px, -30px) rotate(-15deg); }
-            75% { transform: translate(5px, -45px) rotate(10deg); }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
         }
     </style>
 </head>
 <body>
-    <div class="floating-hearts">
-        <span style="left:10%; top:5%"></span>
-        <span style="left:30%; top:15%"></span>
-        <span style="left:50%; top:20%"></span>
-        <span style="left:70%; top:10%"></span>
-        <span style="left:90%; top:5%"></span>
-    </div>
-
-    <div class="love-grid">
-        <div class="photo-frame">
-            <img src="IMG-20250101-WA0033.jpg" alt="Unser süßer Moment">
-        </div>
-        
-        <div class="photo-frame">
-            <img src="IMG-20250101-WA0032.jpg" alt="Gemeinsame Glückseligkeit">
-        </div>
-        
-        <div class="photo-frame">
-            <img src="20240526_232047_IMG_4528.JPG" alt="Ewige Liebe">
-        </div>
-    </div>
+    <h1>Für Martina ❤️</h1>
+    <h2>Du bist mein Ein und Alles</h2>
+    <p>
+        Martina, der Streit war dumm, und es tut mir leid. Ich liebe dich mehr, als Worte sagen können. Du bist mein Herz, mein Leben und meine Zukunft.
+    </p>
+    <p>
+        Bitte vergib mir. Ich verspreche dir, dich für immer zu lieben. ❤️
+    </p>
+    
+    <!-- Die Bilder ohne Verlinkung -->
+    <img src="https://i.ibb.co/rQMPTsR/IMG-20250101-WA0033.jpg" alt="IMG-20250101-WA0033">
+    <img src="https://i.ibb.co/Bgvxvg1/IMG-20250101-WA0032.jpg" alt="IMG-20250101-WA0032">
+    <img src="https://i.ibb.co/3zWpP1X/IMG-20250101-WA0030.jpg" alt="IMG-20250101-WA0030">
+    <img src="https://i.ibb.co/1bVwp4C/20240526-232047-IMG-4528.jpg" alt="20240526-232047-IMG-4528">
+    <img src="https://i.ibb.co/1TcFzgB/1.jpg" alt="1">
 </body>
 </html>
