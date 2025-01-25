@@ -1,58 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Für Martina</title>
+    <title>Für Meine Liebste Martina ❤️</title>
     <style>
         body {
-            background: #000;
+            background: #1a1a1a;
             font-family: 'Arial', sans-serif;
             text-align: center;
-            padding: 50px;
+            padding: 30px;
             color: #fff;
+            overflow-x: hidden;
         }
+
+        .love-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
         h1 {
+            color: #ff85a2;
+            font-size: 3.5em;
+            text-shadow: 0 0 15px rgba(255, 133, 162, 0.5);
+            margin-bottom: 30px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .photo-frame {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .photo-frame:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 133, 162, 0.4);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 400px; /* Höhere Höhe für die Bilder */
+            object-fit: contain; /* Bild vollständig anzeigen, ohne es zuzuschneiden */
+            border-radius: 15px;
+            filter: brightness(0.9);
+            transition: filter 0.3s ease;
+        }
+
+        .photo-frame:hover img {
+            filter: brightness(1.1);
+        }
+
+        .hearts {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .heart {
+            position: absolute;
             color: #ff4757;
-            font-size: 50px;
-            animation: pulse 1.5s infinite;
+            animation: float 6s infinite linear;
+            opacity: 0;
         }
-        h2 {
-            color: #ffa502;
-            font-size: 30px;
-            margin-top: 20px;
-        }
-        p {
-            color: #dfe4ea;
-            font-size: 20px;
-            margin-top: 30px;
-        }
-        img {
-            width: 300px; /* Größe der Bilder anpassen */
-            margin: 20px;
-            border-radius: 15px; /* Ecken abrunden */
-        }
-        @keyframes pulse {
+
+        @keyframes heartbeat {
             0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 25px auto;
+            max-width: 600px;
+            padding: 15px;
+            background: rgba(255, 71, 87, 0.1);
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Für Martina ❤️</h1>
-    <h2>Du bist mein Ein und Alles</h2>
-    <p>
-        Martina, der Streit war dumm, und es tut mir leid. Ich liebe dich mehr, als Worte sagen können. Du bist mein Herz, mein Leben und meine Zukunft.
-    </p>
-    <p>
-        Bitte vergib mir. Ich verspreche dir, dich für immer zu lieben. ❤️
-    </p>
+    <div class="hearts" id="hearts"></div>
     
-    <!-- Die Bilder ohne Verlinkung -->
-    <img src="https://i.ibb.co/rQMPTsR/IMG-20250101-WA0033.jpg" alt="IMG-20250101-WA0033">
-    <img src="https://i.ibb.co/Bgvxvg1/IMG-20250101-WA0032.jpg" alt="IMG-20250101-WA0032">
-    <img src="https://i.ibb.co/3zWpP1X/IMG-20250101-WA0030.jpg" alt="IMG-20250101-WA0030">
-    <img src="https://i.ibb.co/1bVwp4C/20240526-232047-IMG-4528.jpg" alt="20240526-232047-IMG-4528">
-    <img src="https://i.ibb.co/1TcFzgB/1.jpg" alt="1">
+    <div class="love-container">
+        <h1>❤️ Für Martina ❤️</h1>
+        
+        <p>
+            Askim benim jeder Moment mit dir ist wie ein schönes Foto -<br>
+            einzigartig, perfekt und unvergesslich. Ich liebe dich canim!
+        </p>
+
+        <div class="gallery">
+            <!-- Das letzte Bild zuerst -->
+            <div class="photo-frame">
+                <img src="https://i.ibb.co/1TcFzgB/1.jpg" alt="Zweisamkeit">
+            </div>
+            <!-- Das neue Bild als zweites -->
+            <div class="photo-frame">
+                <img src="https://i.ibb.co/x8c7zRV/Screenshot-20250125-125932-Tik-Tok.jpg" alt="Screenshot-20250125-125932-Tik-Tok">
+            </div>
+            <!-- Der Rest der Bilder -->
+            <div class="photo-frame">
+                <img src="https://i.ibb.co/rQMPTsR/IMG-20250101-WA0033.jpg" alt="Unser besonderer Moment">
+            </div>
+            <div class="photo-frame">
+                <img src="https://i.ibb.co/Bgvxvg1/IMG-20250101-WA0032.jpg" alt="Gemeinsame Glückseligkeit">
+            </div>
+            <div class="photo-frame">
+                <img src="https://i.ibb.co/3zWpP1X/IMG-20250101-WA0030.jpg" alt="Lachen zusammen">
+            </div>
+            <div class="photo-frame">
+                <img src="https://i.ibb.co/1bVwp4C/20240526-232047-IMG-4528.jpg" alt="Ewige Liebe">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Herzchen-Animation
+        function createHearts() {
+            const heartsContainer = document.getElementById('hearts');
+            for (let i = 0; i < 30; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.innerHTML = '❤';
+                heart.style.left = Math.random() * 100 + '%';
+                heart.style.animationDelay = Math.random() * 5 + 's';
+                heart.style.fontSize = (15 + Math.random() * 25) + 'px';
+                heartsContainer.appendChild(heart);
+            }
+        }
+        createHearts();
+    </script>
 </body>
 </html>
